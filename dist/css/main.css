@@ -71,7 +71,8 @@ table {
 }
 
 body {
-	background: #ccc;
+	
+	font-family: 'Roboto', sans-serif;
 }
 
 /* 2. Content ================================= */
@@ -151,5 +152,144 @@ body {
 	font-size: 0.8em;
 	opacity: 0.2;
 }
+
+.page_wrap {
+	width: 960px;
+	margin: auto;
+	background: #5aebad;
+}
+
+/*==============================HEADER=======================*/
+
+header {
+	width: 100%;
+	height: 75px;
+	background: #acc5ae;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header h1, h2 {
+	font-size: 25px;
+	padding: 20px;
+}
+
+header h2 {
+	color: #acc5ae;
+}
+
+
+
+/*============================INFO SECTION-=========================*/
+section {
+	width: 600px;
+	height: 300px;
+	background-color: #71a6ee;
+	margin: 20px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+
+}
+
+section h1 {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
+	border-bottom: 1px black solid;
+}
+
+section li {
+	padding: 15px;
+}
+
+
+.me_img {
+	float: right;
+	margin: 20px;
+	padding-right: 20px;
+
+}
+
+
+/*==============================IMG'S===============================*/
+.img_list {
+	width: 960px;
+	height: 300px;
+	background-color: #eeb771;
+}
+
+
+.img_list h1 {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+.img_list img {
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.names {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.names p {
+	border-bottom: 1px solid orange;
+	margin-left: 80px;
+	margin-right: 95px;
+}
+
+.names p:nth-child(2) {
+	margin-left: 70px;
+}
+
+
+
+/*=============================ANIMATIONS======================*/
+
+header h1 {
+	animation: name-ani 1s forwards cubic-bezier(0.57, 0.02, 0.32, 1.29);
+
+
+}
+
+@keyframes name-ani {
+	0% {
+		transform: translateX(-960px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+header h2 {
+	animation: name-ani-header-two 1s forwards cubic-bezier(0.57, 0.02, 0.32, 1.29);
+	animation-delay: 1s;
+}
+
+@keyframes name-ani-header-two {
+	0% {
+		transform: translateY(-300px);
+		
+	}
+
+	100% {
+		transform: translateY(0px);
+		color: black;
+	}
+}
+
+
+
+
+
 
 /*# sourceMappingURL=main.css.map */
